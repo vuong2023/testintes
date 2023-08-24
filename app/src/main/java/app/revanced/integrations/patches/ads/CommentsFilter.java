@@ -20,7 +20,7 @@ final class CommentsFilter extends Filter {
 
         final var emojiPicker = new StringFilterGroup(
                 SettingsEnum.HIDE_EMOJI_PICKER,
-                "|CellType|ContainerType|ContainerType|ContainerType|ContainerType|ContainerType|"
+                "emoji_control_panel"
         );
 
         final var previewComment = new StringFilterGroup(

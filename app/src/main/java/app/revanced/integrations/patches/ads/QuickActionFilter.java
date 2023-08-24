@@ -8,6 +8,10 @@ final class QuickActionFilter extends Filter {
     public QuickActionFilter() {
         pathFilterGroups.addAll(
                 new StringFilterGroup(
+                        SettingsEnum.HIDE_QUICK_ACTIONS,
+                        "quick_actions.eml|"
+                ),
+                new StringFilterGroup(
                         SettingsEnum.HIDE_QUICK_ACTIONS_LIKE_BUTTON,
                         "|like_button"
                 ),
@@ -56,7 +60,7 @@ final class QuickActionFilter extends Filter {
     @Override
     boolean isFiltered(String path, @Nullable String identifier, String allValue, byte[] protobufBufferArray,
                        FilterGroupList matchedList, FilterGroup matchedGroup, int matchedIndex) {
-        if (path.startsWith("quick_actions.eml|"))
+        if (path.startsWith("quick_actions.eml|") && !SettingsEnum.HIDE_FULLSCREEN_PANELS.getBoolean())
             return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedList, matchedGroup, matchedIndex);
 
         return false;

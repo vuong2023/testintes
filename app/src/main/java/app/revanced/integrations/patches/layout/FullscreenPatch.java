@@ -34,13 +34,6 @@ public class FullscreenPatch {
         coordinatorLayout.setVisibility(View.GONE);
     }
 
-    public static void hideQuickActions(View view) {
-        ReVancedUtils.hideViewBy0dpUnderCondition(
-                SettingsEnum.HIDE_FULLSCREEN_PANELS.getBoolean() || SettingsEnum.HIDE_QUICK_ACTIONS.getBoolean(),
-                view
-        );
-    }
-
     public static boolean showFullscreenTitle() {
         return SettingsEnum.SHOW_FULLSCREEN_TITLE.getBoolean() || !SettingsEnum.HIDE_FULLSCREEN_PANELS.getBoolean();
     }

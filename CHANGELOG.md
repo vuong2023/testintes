@@ -1,3 +1,11 @@
+## [0.117.2](https://github.com/YT-Advanced/ReX-integrations/compare/v0.117.1...v0.117.2) (2023-08-25)
+
+
+### Bug Fixes
+
+* **youtube/hide-emoji-picker:** Hide emoji picker not worked ([7a84181](https://github.com/YT-Advanced/ReX-integrations/commit/7a84181f482a4ce398a7c76a612660b49bd500fc))
+* **youtube/hide-quick-action:** Not worked correctly ([da2fde0](https://github.com/YT-Advanced/ReX-integrations/commit/da2fde0bb483c6fc71cc3caef63d19d6a13527a4))
+
 ## [0.117.1](https://github.com/YT-Advanced/ReX-integrations/compare/v0.117.0...v0.117.1) (2023-08-23)
 
 

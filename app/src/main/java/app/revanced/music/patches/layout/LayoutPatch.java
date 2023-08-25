@@ -5,6 +5,7 @@ import static app.revanced.music.utils.ReVancedUtils.hideViewUnderCondition;
 
 import android.view.View;
 import android.widget.TextView;
+import java.util.List;
 
 import app.revanced.music.settings.SettingsEnum;
 
@@ -70,4 +71,13 @@ public class LayoutPatch {
         return SettingsEnum.HIDE_NEW_PLAYLIST_BUTTON.getBoolean();
     }
 
+    public static void hideUpgradeButton(List list) {
+        try {
+            // Remove last index
+            list.remove(list.size() - 1);
+        } catch (Exception ex) {
+            // We can use check null for this case as well
+            // But sometime will have Exception, so use try-catch is better.
+        }
+    }
 }

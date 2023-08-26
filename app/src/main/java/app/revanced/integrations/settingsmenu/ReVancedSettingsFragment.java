@@ -76,7 +76,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
             Preference pref = findPreference(str);
             if (pref == null)
                 return;
-
+                                     
             if (pref instanceof SwitchPreference) {
                 SwitchPreference switchPref = (SwitchPreference) pref;
                 SettingsEnum.setValue(setting, switchPref.isChecked());
@@ -135,7 +135,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
     @Override // android.preference.PreferenceFragment, android.app.Fragment
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-
+                                    
         getPreferenceManager().setSharedPreferencesName(REVANCED.getName());
         try {
             addPreferencesFromResource(identifier("revanced_prefs", ResourceType.XML));
@@ -318,7 +318,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
     private void setPlaybackSpeed() {
         try {
             SettingsEnum speedSetting = SettingsEnum.DEFAULT_PLAYBACK_SPEED;
-
+                                     
             var value = SharedPrefHelper.getString(REVANCED, speedSetting.path, "-2.0");
             speedSetting.saveValue(Float.valueOf(value));
 
@@ -344,7 +344,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
     private void setVideoQuality(boolean isQualityWiFi) {
         try {
             SettingsEnum qualitySetting = isQualityWiFi ? SettingsEnum.DEFAULT_VIDEO_QUALITY_WIFI : SettingsEnum.DEFAULT_VIDEO_QUALITY_MOBILE;
-
+                                     
             var value = SharedPrefHelper.getString(REVANCED, qualitySetting.path, "-2");
             qualitySetting.saveValue(Integer.parseInt(value));
 
@@ -367,7 +367,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
     private void setSpoofAppVersionTarget() {
         try {
             SettingsEnum settingsEnum = SettingsEnum.SPOOF_APP_VERSION_TARGET;
-
+                                     
             var value = SharedPrefHelper.getString(REVANCED, settingsEnum.path, settingsEnum.defaultValue.toString());
             settingsEnum.saveValue(value);
 
@@ -392,7 +392,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
      */
     private void setDoubleBackTimeout() {
         SettingsEnum doubleBackSetting = SettingsEnum.DOUBLE_BACK_TIMEOUT;
-
+                                    
         var value = SharedPrefHelper.getString(REVANCED, doubleBackSetting.path, "2");
         doubleBackSetting.saveValue(Integer.parseInt(value));
     }
@@ -415,7 +415,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
             Activity activity = ReVancedSettingsFragment.this.getActivity();
             boolean isIncludedSB = PatchStatus.SponsorBlock();
             boolean isIncludedSPEED = PatchStatus.VideoSpeed();
-
+                                     
             if (isIncludedSB || isIncludedSPEED) {
                 // Sponsorblock
                 if (isIncludedSB) {
@@ -458,7 +458,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
             final var EXTERNAL_DOWNLOADER_LABEL_PREFERENCE_KEY = "revanced_external_downloader_label";
             final var EXTERNAL_DOWNLOADER_PACKAGE_NAME_PREFERENCE_KEY = "revanced_external_downloader_package_name";
             final var EXTERNAL_DOWNLOADER_WEBSITE_PREFERENCE_KEY = "revanced_external_downloader_website";
-
+                                     
             final String value = SharedPrefHelper.getString(REVANCED, SettingsEnum.EXTERNAL_DOWNLOADER_PACKAGE_NAME.path, "com.deniscerri.ytdl");
             SettingsEnum.EXTERNAL_DOWNLOADER_PACKAGE_NAME.saveValue(value);
 
@@ -545,7 +545,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
         Preference preference = findPreference("revanced_default_app_settings");
         if (preference == null)
             return;
-
+                                    
         Activity activity = getActivity();
         if (activity == null)
             return;
@@ -574,7 +574,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
         Preference exportPreference = findPreference("revanced_export_settings");
         if (importPreference == null || exportPreference == null)
             return;
-
+                                    
         importPreference.setOnPreferenceClickListener(pref -> {
             importActivity();
             return false;
@@ -635,7 +635,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
     private void exportJson(Uri uri) {
         Context context = this.getContext();
         SharedPreferences prefs = context.getSharedPreferences(REVANCED.getName(), Context.MODE_PRIVATE);
-
+                                    
         try {
             @SuppressLint("Recycle")
             FileWriter fileWriter = new FileWriter(
@@ -669,7 +669,7 @@ public class ReVancedSettingsFragment extends PreferenceFragment {
         Context context = this.getContext();
         SharedPreferences prefs = context.getSharedPreferences(REVANCED.getName(), Context.MODE_PRIVATE);
         String json;
-
+                                    
         try {
             @SuppressLint("Recycle")
             FileReader fileReader = new FileReader(

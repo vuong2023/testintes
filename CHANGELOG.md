@@ -1,3 +1,10 @@
+## [0.117.3](https://github.com/YT-Advanced/ReX-integrations/compare/v0.117.2...v0.117.3) (2023-08-28)
+
+
+### Bug Fixes
+
+* Hide Fullscreen panel not worked ([7bf24cb](https://github.com/YT-Advanced/ReX-integrations/commit/7bf24cbea4d724b94bf506071890046cd930b553))
+
 ## [0.117.2](https://github.com/YT-Advanced/ReX-integrations/compare/v0.117.1...v0.117.2) (2023-08-25)
 
 

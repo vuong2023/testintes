@@ -18,7 +18,7 @@ public class VideoHelpers {
                 showToastShort("Context is null!");
                 return;
             }
-            var downloaderPackageName = SettingsEnum.EXTERNAL_DOWNLOADER_PACKAGE_NAME.getString();
+            var downloaderPackageName = SettingsEnum.EXTERNAL_DOWNLOADER_PACKAGE_NAME.getString().trim();
 
             boolean packageEnabled = false;
             try {

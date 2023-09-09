@@ -1,3 +1,35 @@
+# [0.119.0](https://github.com/YT-Advanced/ReX-integrations/compare/v0.118.1...v0.119.0) (2023-09-09)
+
+
+### Bug Fixes
+
+* compile error ([f02391b](https://github.com/YT-Advanced/ReX-integrations/commit/f02391b2721a8f32c4b897d79ad83bfd377bf94d))
+* Hide Quality Footer not worked ([3fb6df7](https://github.com/YT-Advanced/ReX-integrations/commit/3fb6df778f0f43b8bbc2a4f1a82fb5255d2ca16b))
+* **music/hide-upgrade-button:** not compatible with latest version ([2b7f885](https://github.com/YT-Advanced/ReX-integrations/commit/2b7f885eeadee8a5bb806826b061b9bdb95da993))
+* **music/settings:** blank screen appears when text input dialog is shown ([e06d2a5](https://github.com/YT-Advanced/ReX-integrations/commit/e06d2a588e2f990dadcc9932588804e2277cbf24))
+* **youtube/default-video-quality:** rollback commit ([583817b](https://github.com/YT-Advanced/ReX-integrations/commit/583817b9f17d28ee95bcc2a59759ef5e09a0c1a1))
+* **youtube/hide-layout-components:** custom filters are separated by commas instead of line-by-line ([1c5054d](https://github.com/YT-Advanced/ReX-integrations/commit/1c5054d352990acd0679efb23b25a542c2272562))
+* **youtube/litho-filter:** don't remove the buffer until the thread stops ([bda2e90](https://github.com/YT-Advanced/ReX-integrations/commit/bda2e90490c506e7f4374f5a108146f81ec68b64))
+* **youtube/old-quality-layout:** does not work on tablet devices ([4e1ef1d](https://github.com/YT-Advanced/ReX-integrations/commit/4e1ef1d630c2f84c56274b52eb64bbaa18f2f004))
+* **youtube/settings:** remove disable some settings code for tablet devices ([66a3a46](https://github.com/YT-Advanced/ReX-integrations/commit/66a3a464afb5c972e0a39365b666fdf2d834e716))
+
+
+### Features
+
+* **music/amoled:** patch now applies the amoled theme to the comment input box as well ([b7a50cc](https://github.com/YT-Advanced/ReX-integrations/commit/b7a50ccd026f8e2bb9a5106e21827b6a7234b632))
+* **music/enable-custom-filter:** separate filters by line instead of commas ([fd8e23b](https://github.com/YT-Advanced/ReX-integrations/commit/fd8e23b2f0e5656a31a5d0a93d3527b11b3512c9))
+* **music/settings:** change some default value ([648ce6f](https://github.com/YT-Advanced/ReX-integrations/commit/648ce6f1190f429f508d42ac915535737b31d2a7))
+* **music/settings:** trim empty space from edit text dialog ([79af45d](https://github.com/YT-Advanced/ReX-integrations/commit/79af45d6d8d89940cc828674970661a6ec30f4a5))
+* **music:** add `enable playback speed` patch ([1c9399d](https://github.com/YT-Advanced/ReX-integrations/commit/1c9399d1095e80462af1c04fcffb89fbbc9ee6f6))
+* **music:** add `enable-old-style-library-shelf` patch ([53a7191](https://github.com/YT-Advanced/ReX-integrations/commit/53a7191d9465856ccb4fb39121c2915b185c54ab))
+* **music:** add `hide-button-container-labels` patch ([42af72f](https://github.com/YT-Advanced/ReX-integrations/commit/42af72f383fd49c4cd618cfebca719ceaca2cd00))
+* **music:** add `hide-emoji-picker` patch ([f98289c](https://github.com/YT-Advanced/ReX-integrations/commit/f98289cd9d91727697e09fcb57af3433454f964c))
+* **music:** add `hide-flyout-panel` patch ([4afe5a6](https://github.com/YT-Advanced/ReX-integrations/commit/4afe5a61c680fab16d24b39616a14c8665019342))
+* **music:** add `hide-radio-button` patch ([4a8b3dc](https://github.com/YT-Advanced/ReX-integrations/commit/4a8b3dc3afe8f60dd0bf497b735e9ca01f666b40))
+* **music:** add `remember-playback-speed` patch ([92463a0](https://github.com/YT-Advanced/ReX-integrations/commit/92463a07ab87e2de42b43ec3ac6815722c49fa9a))
+* **music:** add `return-youtube-dislike` patch ([d34d34c](https://github.com/YT-Advanced/ReX-integrations/commit/d34d34c438d4fe3e596cac0970457b4ce2dc7248))
+* **youtube/litho-filter:** update filter ([f377497](https://github.com/YT-Advanced/ReX-integrations/commit/f377497240a747a63342eba44a173009ba641b60))
+
 # [0.118.0](https://github.com/YT-Advanced/ReX-integrations/compare/v0.117.3...v0.118.0) (2023-09-01)
 
 

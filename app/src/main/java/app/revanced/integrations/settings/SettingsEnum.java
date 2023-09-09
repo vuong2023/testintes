@@ -72,6 +72,7 @@ public enum SettingsEnum {
     HIDE_PLAYER_FLYOUT_PANEL_AMBIENT("revanced_hide_player_flyout_panel_ambient_mode", BOOLEAN, FALSE),
     HIDE_PLAYER_FLYOUT_PANEL_AUDIO_TRACK("revanced_hide_player_flyout_panel_audio_track", BOOLEAN, FALSE),
     HIDE_PLAYER_FLYOUT_PANEL_CAPTIONS("revanced_hide_player_flyout_panel_captions", BOOLEAN, FALSE),
+    HIDE_PLAYER_FLYOUT_PANEL_CAPTIONS_FOOTER("revanced_hide_player_flyout_panel_captions_footer", BOOLEAN, FALSE),
     HIDE_PLAYER_FLYOUT_PANEL_HELP("revanced_hide_player_flyout_panel_help", BOOLEAN, FALSE),
     HIDE_PLAYER_FLYOUT_PANEL_LISTENING_CONTROLS("revanced_hide_player_flyout_panel_listening_controls", BOOLEAN, FALSE),
     HIDE_PLAYER_FLYOUT_PANEL_LOCK_SCREEN("revanced_hide_player_flyout_panel_lock_screen", BOOLEAN, FALSE),

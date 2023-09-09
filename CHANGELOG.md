@@ -1,3 +1,10 @@
+## [0.119.1](https://github.com/YT-Advanced/testintes/compare/v0.119.0...v0.119.1) (2023-09-09)
+
+
+### Bug Fixes
+
+* Not worked ([9ab2439](https://github.com/YT-Advanced/testintes/commit/9ab2439f59d60c47b83c1d6e30469bfada683973))
+
 # [0.119.0](https://github.com/YT-Advanced/ReX-integrations/compare/v0.118.1...v0.119.0) (2023-09-09)
 
 

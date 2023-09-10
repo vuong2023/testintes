@@ -27,8 +27,8 @@ final class PlayerFlyoutPanelsFooterFilter extends Filter {
                        FilterGroupList matchedList, FilterGroup matchedGroup, int matchedIndex) {
         // If the flyout is not caption or quality, skip
         if ( (path.contains("captions_sheet_content.eml-js") || path.contains("advanced_quality_sheet_content.eml-js")) && !path.contains("bottom_sheet_list_option"))
-            return false;
+            return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedList, matchedGroup, matchedIndex);
 
-        return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedList, matchedGroup, matchedIndex);
+        return false;
     }
 }
